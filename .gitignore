@@ -1,0 +1,30 @@
+# RTL simulation outputs
+*.vvp
+*.vcd
+*.fst
+*.lxt
+*.lxt2
+
+# C/C++ build outputs
+*.exe
+*.obj
+*.o
+*.out
+
+# Logs and traces
+*.log
+*.csv
+
+# Generated directories
+sim/
+build/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
