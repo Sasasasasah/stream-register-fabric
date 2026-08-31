@@ -5,6 +5,10 @@ datapath, accompanied by a cycle-aware C++ reference model and self-checking
 verification environment. The project explores deterministic data movement in
 a fixed-latency register fabric rather than a ready/valid queue.
 
+This repository is a cycle-accurate RTL/C++ architecture prototype for
+studying and verifying statically scheduled stream-register data movement; it
+is not production interconnect IP.
+
 ## Features
 
 - Parameterized RTL hierarchy: fabric, hemisphere, direction fabric, column,

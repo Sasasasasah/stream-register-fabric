@@ -50,4 +50,8 @@ The default `hop_cycles` value is one. An external boundary candidate first ente
 - Multiple simultaneous producers assert collision status.
 - Consuming an invalid cell asserts invalid-consume status.
 
-When multiple local producers collide, the implementation chooses the lowest producer index for deterministic simulation. A selected local Inject candidate has priority over upstream propagation; collision status remains asserted so clients cannot treat the winning payload as conflict-free data.
+Legal static schedules are collision-free. If multiple local producers target a
+cell, the implementation chooses the lowest producer index only to provide a
+deterministic conflict-reporting fallback; `collision_o` remains asserted. This
+behavior is not arbitration, and schedules must not rely on the selected
+payload as conflict-free data.
